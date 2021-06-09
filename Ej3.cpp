@@ -7,30 +7,30 @@
 // costo de minutos excedidos) mas el 21 % del valor del IVA.
 // 	UTILICE FUNCIONES.
 
-void CalcularAbono(float costoAbono, int minutosLibres, float cargoExedente, int minutosUtilizados)
+void CalcularAbono(float costoAbono, int minutosLibres, float cargoExcedente, int minutosUtilizados)
 {
 	if(minutosUtilizados > minutosLibres)
 	{
-		std::cout << "Minutos exedidos: " << minutosUtilizados - minutosLibres << std::endl;
-		std::cout << "Monto a abonar: " << (costoAbono + cargoExedente * (minutosUtilizados - minutosLibres)) * 1.21 << std::endl;
+		std::cout << "Minutos excedidos: " << minutosUtilizados - minutosLibres << std::endl;
+		std::cout << "Monto a abonar: " << (costoAbono + cargoExcedente * (minutosUtilizados - minutosLibres)) * 1.21 << std::endl;
 	}
 	else
 	{
-		std::cout << "No tiene minutos execudidos" << std::endl;
+		std::cout << "No tiene minutos excedidos" << std::endl;
 	}
 }
 
 int main()
 {
-	float costoAbono, cargoExedente;
+	float costoAbono, cargoExcedente;
 	int minutosLibres, minutosUtilizados;
 
 	std::cout << "Ingrese el costo del abono: ";
 	std::cin >> costoAbono;
 	std::cout << "Ingrese los minutos libres del abono: ";
 	std::cin >> minutosLibres;
-	std::cout << "Cargo en pesos por minuto exedente: ";
-	std::cin >> cargoExedente;
+	std::cout << "Cargo en pesos por minuto excedente: ";
+	std::cin >> cargoExcedente;
 	std::cout << "Cantidad de minutos utilizados: ";
 	std::cin >> minutosUtilizados;
 
