@@ -36,5 +36,5 @@ int main()
 
 	std::cout << std::endl;
 
-	CalcularAbono(costoAbono, minutosLibres, cargoExedente, minutosUtilizados);
+	CalcularAbono(costoAbono, minutosLibres, cargoExcedente, minutosUtilizados);
 }
